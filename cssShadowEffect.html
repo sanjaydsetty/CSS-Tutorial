@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+:root{
+    --primary-color: brown;
+    --custom-width: 330px;
+}
+
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            /* below shown is called custom variable where here it can be used only inside the flower bracket of box */
+            /* --primary-color: brown;
+            --custom-width: 330px; */
+            /* OR ELSE, root(as shown at the top can we used for declaring it globally) */
+
+            background-color: aquamarine;
+            width: var(--custom-width);
+            height: 330px;
+            border: 1px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: 10px 15px 5px 20px brown; */
+            /* SHADOW EFFECT AS SHOWN ABOVE */
+            /* xAxis yAxis blurRadius spreadRadius */
+
+            /* below lets the shadow in */
+            /* box-shadow: inset 10px 15px blue; */
+
+            /* below lets multiple shadows */
+            /* box-shadow: 10px 15px red, 30px 30px blue; */
+        }
+
+        /* TEXT SHADOW */
+        #head1{
+            text-shadow:2px 3px 2px white, 3px 4px 3px red, 4px 5px 4px yellow ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="MongoDB.jpg" alt="mongodb" width="200px" height="100px">
+            <h2 id="head1">Welcome to MongoDB</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur recusandae reprehenderit, dolorem minima dignissimos laboriosam eaque quae blanditiis debitis quasi!</p
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(105, 104, 104);
+    display: grid;
+}
+
+.item{
+    background-color: blueviolet;
+    border: 5px solid black;
+}
+
+
+
